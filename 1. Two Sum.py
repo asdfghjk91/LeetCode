@@ -2,11 +2,13 @@
 You may assume that each input would have exactly one solution, and you may not use the same element twice.
 You can return the answer in any order."""
 
-def twoSum(nums,target):
+
+def twoSum(nums, target):
     hashmap = {}
-    for num,int in enumerate(nums):
-        if (target - int) in hashmap:  
-            return [hashmap[target - int],num]
+    for num, int in enumerate(nums):
+        if (target - int) in hashmap:
+            return [hashmap[target - int], num]
         hashmap[int] = num
-        
-print(twoSum([3,2,4],6))
+
+
+print(twoSum([3, 2, 4], 6))
